@@ -1,1 +1,0 @@
-# Medinskiy-1

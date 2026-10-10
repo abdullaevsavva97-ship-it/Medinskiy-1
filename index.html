@@ -1,0 +1,354 @@
+<!DOCTYPE html><html lang="ru"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0"><title>Тест — Арабский язык</title><style>:root{--bg:#0f0e17;--card:#1a1828;--card2:#221f35;--accent:#c5a028;--accent2:#9b59b6;--text:#e8e4f0;--muted:#7a7590;--correct:#27ae60;--wrong:#e74c3c;--border:#2e2b45}*{box-sizing:border-box;margin:0;padding:0}body{background:var(--bg);color:var(--text);font-family:sans-serif;min-height:100vh}.container{max-width:780px;margin:0 auto;padding:30px 16px 80px}header{text-align:center;margin-bottom:40px}.brand{font-size:2rem;font-weight:900;letter-spacing:4px;color:var(--accent);margin-bottom:10px;text-shadow:0 0 30px rgba(197,160,40,0.4)}.social{display:flex;justify-content:center;gap:16px;margin-bottom:16px;flex-wrap:wrap}.social a{display:flex;align-items:center;gap:6px;text-decoration:none;font-size:.82rem;font-weight:600;padding:6px 14px;border-radius:20px;transition:opacity .2s}.social a:hover{opacity:.8}.insta{background:linear-gradient(45deg,#f09433,#e6683c,#dc2743,#cc2366,#bc1888);color:#fff}.yt{background:#ff0000;color:#fff}h1{font-size:1.3rem;margin-bottom:6px}header p{color:var(--muted);font-size:.88rem}.divider{height:1px;background:linear-gradient(90deg,transparent,var(--accent),transparent);margin:24px 0}.pb{background:var(--border);border-radius:99px;height:6px;margin-bottom:6px;overflow:hidden}.pf{height:100%;background:linear-gradient(90deg,var(--accent2),var(--accent));border-radius:99px;transition:width .5s}.pl{text-align:right;font-size:.75rem;color:var(--muted);margin-bottom:24px}.sh{display:flex;align-items:center;gap:12px;margin-bottom:16px}.sn{width:34px;height:34px;border-radius:50%;background:linear-gradient(135deg,var(--accent2),var(--accent));display:flex;align-items:center;justify-content:center;font-weight:700;font-size:.85rem;flex-shrink:0}.st{font-size:1rem;font-weight:700}.sd{font-size:.76rem;color:var(--muted);margin-top:2px}.sb{margin-bottom:36px}.qb{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:18px;margin-bottom:14px;transition:border-color .3s}.qb.correct{border-color:var(--correct);background:rgba(39,174,96,.05)}.qb.wrong{border-color:var(--wrong);background:rgba(231,76,60,.05)}.qt{font-size:.92rem;font-weight:600;margin-bottom:12px;line-height:1.5}.qa{font-size:1.3rem;direction:rtl;text-align:center;color:var(--accent);padding:10px;background:var(--card2);border-radius:10px;margin-bottom:12px;line-height:2}.og{display:grid;gap:8px}.tc{grid-template-columns:1fr 1fr}.ob{background:var(--card2);border:1px solid var(--border);border-radius:9px;padding:10px 12px;color:var(--text);font-family:sans-serif;font-size:.88rem;cursor:pointer;transition:all .2s;text-align:center;width:100%;line-height:1.4}.ob:hover{border-color:var(--accent);background:rgba(197,160,40,.08)}.ob.sc{border-color:var(--correct);background:rgba(39,174,96,.15);color:#5ddb8d}.ob.sw{border-color:var(--wrong);background:rgba(231,76,60,.15);color:#f08080}.ob.sk{border-color:var(--correct);background:rgba(39,174,96,.08)}.ob:disabled{cursor:default}.fb{font-size:.8rem;margin-top:8px;padding:8px 12px;border-radius:7px;display:none;line-height:1.5}.fb.show{display:block}.fb.ok{background:rgba(39,174,96,.1);color:#5ddb8d}.fb.bad{background:rgba(231,76,60,.1);color:#f08080}.mc{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:8px}.mcl{display:flex;flex-direction:column;gap:7px}.mi{padding:10px 11px;border-radius:9px;border:1px solid var(--border);text-align:center;font-size:.88rem;line-height:1.4}.ml{background:var(--card2);cursor:pointer;transition:all .2s}.ml:hover:not(.mok):not(.mbad){border-color:var(--accent)}.ml.sel{border-color:var(--accent);background:rgba(197,160,40,.12)}.ml.mok{border-color:var(--correct);background:rgba(39,174,96,.1);color:#5ddb8d;cursor:default}.ml.mbad{border-color:var(--wrong);background:rgba(231,76,60,.1)}.mr{background:rgba(155,89,182,.1);border-color:rgba(155,89,182,.3);cursor:pointer;transition:all .2s;direction:rtl;font-size:1.15rem;color:var(--accent)}.mr:hover:not(.mok):not(.mbad){border-color:var(--accent2)}.mr.mok{border-color:var(--correct);background:rgba(39,174,96,.1);color:#5ddb8d;cursor:default}.mr.mbad{border-color:var(--wrong);background:rgba(231,76,60,.1)}.audio-btn{background:var(--card2);border:1px solid var(--accent2);border-radius:10px;padding:11px 18px;color:var(--accent);font-family:sans-serif;font-size:.95rem;cursor:pointer;display:flex;align-items:center;gap:10px;margin:0 auto 14px;transition:all .2s}.audio-btn:hover{background:rgba(155,89,182,.15)}.ia{width:100%;background:var(--card2);border:1px solid var(--border);border-radius:9px;padding:10px 13px;color:var(--text);font-family:sans-serif;font-size:.92rem;outline:none;margin-bottom:8px}.ia.ci{border-color:var(--correct)}.ia.wi{border-color:var(--wrong)}.cb{background:linear-gradient(135deg,var(--accent2),var(--accent));border:none;border-radius:9px;padding:9px 18px;color:#fff;font-family:sans-serif;font-size:.82rem;font-weight:600;cursor:pointer;margin-top:8px}.cb:disabled{opacity:.4}.rule-box{background:linear-gradient(135deg,rgba(155,89,182,.15),rgba(197,160,40,.1));border:1px solid var(--accent2);border-radius:12px;padding:14px 18px;margin-bottom:18px}.rule-title{font-size:.82rem;color:var(--accent2);font-weight:700;margin-bottom:8px}.rule-note{font-size:.8rem;color:var(--muted);line-height:1.8}.cah{font-size:.76rem;color:var(--muted);margin-top:4px}.sa{text-align:center;margin-top:40px}.subb{background:linear-gradient(135deg,var(--accent2),var(--accent));border:none;border-radius:13px;padding:15px 40px;color:#fff;font-size:1.05rem;font-weight:700;cursor:pointer}#rs{display:none;text-align:center;padding:50px 20px}.rsc{font-size:4rem;font-weight:700;color:var(--accent);margin-bottom:10px}.rsg{font-size:1.7rem;font-weight:700;margin-bottom:16px}.rsm{color:var(--muted);font-size:.92rem;margin-bottom:32px}.rb{background:transparent;border:1px solid var(--accent);border-radius:11px;padding:12px 32px;color:var(--accent);font-size:.92rem;cursor:pointer}.errors-block{margin-top:32px;text-align:left}.errors-title{font-size:1rem;font-weight:700;color:var(--wrong);margin-bottom:14px;text-align:center}.err-item{background:var(--card);border:1px solid var(--wrong);border-radius:12px;padding:14px;margin-bottom:10px}.err-q{font-size:.82rem;color:var(--muted);margin-bottom:6px}.err-arabic{font-size:1.2rem;direction:rtl;color:var(--accent);margin-bottom:6px;line-height:1.8}.err-row{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:8px}.err-yours{background:rgba(231,76,60,.1);border:1px solid var(--wrong);border-radius:8px;padding:5px 10px;font-size:.79rem;color:#f08080}.err-correct{background:rgba(39,174,96,.1);border:1px solid var(--correct);border-radius:8px;padding:5px 10px;font-size:.79rem;color:#5ddb8d}.err-explain{font-size:.77rem;color:var(--muted);background:rgba(155,89,182,.08);border-left:3px solid var(--accent2);padding:7px 11px;border-radius:0 8px 8px 0;line-height:1.5}@media(max-width:500px){.tc{grid-template-columns:1fr}.mc{grid-template-columns:1fr}.ob{font-size:.82rem}}</style></head><body>
+<div class="container">
+<header>
+<div class="brand">SAVVA.ARABIYA</div>
+<div class="social">
+<a href="https://www.instagram.com/savva.arabiya?igsh=ejU2cDNrOXBuaTVw&utm_source=qr" target="_blank" class="insta"><svg width="15" height="15" viewBox="0 0 24 24" fill="white"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 1.366.062 2.633.334 3.608 1.308.975.975 1.246 2.242 1.308 3.608.058 1.266.07 1.646.07 4.85s-.012 3.584-.07 4.85c-.062 1.366-.334 2.633-1.308 3.608-.975.975-2.242 1.246-3.608 1.308-1.266.058-1.646.07-4.85.07s-3.584-.012-4.85-.07c-1.366-.062-2.633-.334-3.608-1.308-.975-.975-1.246-2.242-1.308-3.608C2.175 15.584 2.163 15.204 2.163 12s.012-3.584.07-4.85c.062-1.366.334-2.633 1.308-3.608.975-.975 2.242-1.246 3.608-1.308C8.416 2.175 8.796 2.163 12 2.163zm0-2.163C8.741 0 8.332.014 7.052.072 5.197.157 3.355.673 2.014 2.014.673 3.355.157 5.197.072 7.052.014 8.332 0 8.741 0 12c0 3.259.014 3.668.072 4.948.085 1.855.601 3.697 1.942 5.038 1.341 1.341 3.183 1.857 5.038 1.942C8.332 23.986 8.741 24 12 24s3.668-.014 4.948-.072c1.855-.085 3.697-.601 5.038-1.942 1.341-1.341 1.857-3.183 1.942-5.038.058-1.28.072-1.689.072-4.948s-.014-3.668-.072-4.948c-.085-1.855-.601-3.697-1.942-5.038C20.645.673 18.803.157 16.948.072 15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zm0 10.162a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg> Instagram</a>
+<a href="https://youtube.com/@savvaarabiya?si=l0A5akdb7I6II2iI" target="_blank" class="yt"><svg width="15" height="15" viewBox="0 0 24 24" fill="white"><path d="M23.495 6.205a3.007 3.007 0 0 0-2.088-2.088c-1.87-.501-9.396-.501-9.396-.501s-7.507-.01-9.396.501A3.007 3.007 0 0 0 .527 6.205a31.247 31.247 0 0 0-.522 5.805 31.247 31.247 0 0 0 .522 5.783 3.007 3.007 0 0 0 2.088 2.088c1.868.502 9.396.502 9.396.502s7.506 0 9.396-.502a3.007 3.007 0 0 0 2.088-2.088 31.247 31.247 0 0 0 .5-5.783 31.247 31.247 0 0 0-.5-5.805zM9.609 15.601V8.408l6.264 3.602z"/></svg> YouTube</a>
+</div>
+<h1>Тест по арабскому языку</h1>
+<p>هَذَا / ذَلِكَ — Это / То. Кто это? Что это?</p>
+</header>
+<div class="divider"></div>
+<div class="pb"><div class="pf" id="pf" style="width:0%"></div></div>
+<div class="pl" id="pl">0 / 25 отвечено</div>
+<div id="qc">
+
+<div class="sb">
+<div class="sh"><div class="sn">📖</div><div><div class="st">Правило: هَذَا и ذَلِكَ</div><div class="sd">«Это» и «То» в арабском языке</div></div></div>
+<div class="rule-box">
+<div class="rule-title">Указательные местоимения и вопросы:</div>
+<div class="rule-note">
+• <span style="color:var(--accent)">هَذَا</span> — это (рядом) &nbsp;•&nbsp; <span style="color:var(--accent)">ذَلِكَ</span> — то (вдали)<br>
+• <span style="color:var(--accent)">مَا هَذَا؟</span> — Что это? (о предмете) &nbsp;→&nbsp; <span style="color:var(--accent)">هَذَا قَلَمٌ</span> — Это ручка<br>
+• <span style="color:var(--accent)">مَنْ هَذَا؟</span> — Кто это? (о человеке) &nbsp;→&nbsp; <span style="color:var(--accent)">هَذَا طَبِيبٌ</span> — Это врач<br>
+• <span style="color:var(--accent)">أَهَذَا...؟</span> — Это...? (вопрос) &nbsp;→&nbsp; <span style="color:var(--accent)">لَا، هَذَا...</span> — Нет, это...<br>
+• Артикль الـ: قَلَمٌ → الْقَلَمُ (ручка → ручка/та ручка)
+</div>
+</div>
+</div>
+
+<div class="sb">
+<div class="sh"><div class="sn">1</div><div><div class="st">مَا هَذَا؟ — Что это?</div><div class="sd">Выбери правильный перевод арабского слова</div></div></div>
+
+<div class="qb" id="qb-1"><div class="qt">Что означает слово?</div><div class="qa">قَلَمٌ</div><div class="og tc"><button class="ob" id="q1b1">Книга</button><button class="ob" id="q1b2">Ручка / карандаш</button><button class="ob" id="q1b3">Стол</button><button class="ob" id="q1b4">Стул</button></div><div class="fb" id="fb-1"></div></div>
+
+<div class="qb" id="qb-2"><div class="qt">Что означает слово?</div><div class="qa">كِتَابٌ</div><div class="og tc"><button class="ob" id="q2b1">Тетрадь</button><button class="ob" id="q2b2">Стул</button><button class="ob" id="q2b3">Книга</button><button class="ob" id="q2b4">Дверь</button></div><div class="fb" id="fb-2"></div></div>
+
+<div class="qb" id="qb-3"><div class="qt">Что означает слово?</div><div class="qa">بَيْتٌ</div><div class="og tc"><button class="ob" id="q3b1">Мечеть</button><button class="ob" id="q3b2">Офис</button><button class="ob" id="q3b3">Дом</button><button class="ob" id="q3b4">Школа</button></div><div class="fb" id="fb-3"></div></div>
+
+<div class="qb" id="qb-4"><div class="qt">Что означает слово?</div><div class="qa">مَسْجِدٌ</div><div class="og tc"><button class="ob" id="q4b1">Рынок</button><button class="ob" id="q4b2">Мечеть</button><button class="ob" id="q4b3">Школа</button><button class="ob" id="q4b4">Больница</button></div><div class="fb" id="fb-4"></div></div>
+
+<div class="qb" id="qb-5"><div class="qt">Что означает слово?</div><div class="qa">سَرِيرٌ</div><div class="og tc"><button class="ob" id="q5b1">Стол</button><button class="ob" id="q5b2">Стул</button><button class="ob" id="q5b3">Кровать</button><button class="ob" id="q5b4">Дверь</button></div><div class="fb" id="fb-5"></div></div>
+
+<div class="qb" id="qb-6"><div class="qt">Что означает слово?</div><div class="qa">مِفْتَاحٌ</div><div class="og tc"><button class="ob" id="q6b1">Замок</button><button class="ob" id="q6b2">Ключ</button><button class="ob" id="q6b3">Дверь</button><button class="ob" id="q6b4">Окно</button></div><div class="fb" id="fb-6"></div></div>
+</div>
+
+<div class="sb">
+<div class="sh"><div class="sn">2</div><div><div class="st">مَنْ هَذَا؟ — Кто это?</div><div class="sd">Люди и профессии</div></div></div>
+
+<div class="qb" id="qb-7"><div class="qt">Что означает слово?</div><div class="qa">طَبِيبٌ</div><div class="og tc"><button class="ob" id="q7b1">Учитель</button><button class="ob" id="q7b2">Торговец</button><button class="ob" id="q7b3">Врач</button><button class="ob" id="q7b4">Студент</button></div><div class="fb" id="fb-7"></div></div>
+
+<div class="qb" id="qb-8"><div class="qt">Что означает слово?</div><div class="qa">مُدَرِّسٌ</div><div class="og tc"><button class="ob" id="q8b1">Студент</button><button class="ob" id="q8b2">Учитель / преподаватель</button><button class="ob" id="q8b3">Имам</button><button class="ob" id="q8b4">Врач</button></div><div class="fb" id="fb-8"></div></div>
+
+<div class="qb" id="qb-9"><div class="qt">Что означает слово?</div><div class="qa">طَالِبٌ</div><div class="og tc"><button class="ob" id="q9b1">Торговец</button><button class="ob" id="q9b2">Мальчик</button><button class="ob" id="q9b3">Студент / учащийся</button><button class="ob" id="q9b4">Имам</button></div><div class="fb" id="fb-9"></div></div>
+
+<div class="qb" id="qb-10"><div class="qt">Как спросить «Кто это?» по-арабски?</div><div class="og tc"><button class="ob" id="q10b1" style="direction:rtl;font-size:1.1rem">مَا هَذَا؟</button><button class="ob" id="q10b2" style="direction:rtl;font-size:1.1rem">مَنْ هَذَا؟</button><button class="ob" id="q10b3" style="direction:rtl;font-size:1.1rem">مَا ذَلِكَ؟</button><button class="ob" id="q10b4" style="direction:rtl;font-size:1.1rem">أَيْنَ هَذَا؟</button></div><div class="fb" id="fb-10"></div></div>
+
+<div class="qb" id="qb-11"><div class="qt">Как спросить «Что это?» по-арабски?</div><div class="og tc"><button class="ob" id="q11b1" style="direction:rtl;font-size:1.1rem">مَنْ هَذَا؟</button><button class="ob" id="q11b2" style="direction:rtl;font-size:1.1rem">مَا هَذَا؟</button><button class="ob" id="q11b3" style="direction:rtl;font-size:1.1rem">هَلْ هَذَا؟</button><button class="ob" id="q11b4" style="direction:rtl;font-size:1.1rem">مَنْ ذَلِكَ؟</button></div><div class="fb" id="fb-11"></div></div>
+</div>
+
+<div class="sb">
+<div class="sh"><div class="sn">3</div><div><div class="st">هَذَا أَمْ ذَلِكَ؟</div><div class="sd">«Это» или «То» — выбери правильное местоимение</div></div></div>
+
+<div class="qb" id="qb-12"><div class="qt">Переведи предложение:</div><div class="qa">هَذَا قَلَمٌ</div><div class="og tc"><button class="ob" id="q12b1">Та ручка</button><button class="ob" id="q12b2">Это ручка</button><button class="ob" id="q12b3">Это книга</button><button class="ob" id="q12b4">Это карандаш там</button></div><div class="fb" id="fb-12"></div></div>
+
+<div class="qb" id="qb-13"><div class="qt">Переведи предложение:</div><div class="qa">ذَلِكَ نَجْمٌ</div><div class="og tc"><button class="ob" id="q13b1">Это звезда</button><button class="ob" id="q13b2">То луна</button><button class="ob" id="q13b3">То звезда</button><button class="ob" id="q13b4">Это большая звезда</button></div><div class="fb" id="fb-13"></div></div>
+
+<div class="qb" id="qb-14"><div class="qt">Переведи диалог:</div><div class="qa">أَهَذَا كَلْبٌ؟ لَا، هَذَا قِطٌّ</div><div class="og"><button class="ob" id="q14b1">Это кошка? Нет, это собака.</button><button class="ob" id="q14b2">Это собака? Да, это собака.</button><button class="ob" id="q14b3">Это собака? Нет, это кошка.</button><button class="ob" id="q14b4">То собака? Нет, то кошка.</button></div><div class="fb" id="fb-14"></div></div>
+
+<div class="qb" id="qb-15"><div class="qt">Переведи предложение:</div><div class="qa">هَذَا حِصَانٌ وَذَلِكَ حِمَارٌ</div><div class="og"><button class="ob" id="q15b1">Это осёл и то лошадь</button><button class="ob" id="q15b2">Это лошадь и то осёл</button><button class="ob" id="q15b3">Это лошадь и то верблюд</button><button class="ob" id="q15b4">То лошадь и это осёл</button></div><div class="fb" id="fb-15"></div></div>
+</div>
+
+<div class="sb">
+<div class="sh"><div class="sn">4</div><div><div class="st">Сопоставь слово и перевод</div><div class="sd">Нажми русское слово слева, затем арабское справа</div></div></div>
+
+<div class="qb" id="qb-m1"><div class="qt">Сопоставь предметы с арабскими словами:</div>
+<div class="mc">
+<div class="mcl" id="m1l">
+<div class="mi ml" onclick="mc('m1','l',this,'w1')">Ручка</div>
+<div class="mi ml" onclick="mc('m1','l',this,'w2')">Книга</div>
+<div class="mi ml" onclick="mc('m1','l',this,'w3')">Дом</div>
+<div class="mi ml" onclick="mc('m1','l',this,'w4')">Стул</div>
+</div>
+<div class="mcl" id="m1r">
+<div class="mi mr" onclick="mc('m1','r',this,'w2')">كِتَابٌ</div>
+<div class="mi mr" onclick="mc('m1','r',this,'w4')">كُرْسِيٌّ</div>
+<div class="mi mr" onclick="mc('m1','r',this,'w1')">قَلَمٌ</div>
+<div class="mi mr" onclick="mc('m1','r',this,'w3')">بَيْتٌ</div>
+</div>
+</div>
+<div class="fb" id="fb-m1"></div></div>
+
+<div class="qb" id="qb-m2"><div class="qt">Сопоставь людей и животных с арабскими словами:</div>
+<div class="mc">
+<div class="mcl" id="m2l">
+<div class="mi ml" onclick="mc('m2','l',this,'p1')">Врач</div>
+<div class="mi ml" onclick="mc('m2','l',this,'p2')">Учитель</div>
+<div class="mi ml" onclick="mc('m2','l',this,'p3')">Верблюд</div>
+<div class="mi ml" onclick="mc('m2','l',this,'p4')">Петух</div>
+</div>
+<div class="mcl" id="m2r">
+<div class="mi mr" onclick="mc('m2','r',this,'p4')">دِيكٌ</div>
+<div class="mi mr" onclick="mc('m2','r',this,'p1')">طَبِيبٌ</div>
+<div class="mi mr" onclick="mc('m2','r',this,'p3')">جَمَلٌ</div>
+<div class="mi mr" onclick="mc('m2','r',this,'p2')">مُدَرِّسٌ</div>
+</div>
+</div>
+<div class="fb" id="fb-m2"></div></div>
+</div>
+
+<div class="sb">
+<div class="sh"><div class="sn">5</div><div><div class="st">الْكَلِمَاتُ — Слова с артиклем</div><div class="sd">Выбери правильную форму с артиклем الـ</div></div></div>
+
+<div class="qb" id="qb-16"><div class="qt">Как правильно сказать «та ручка» (с артиклем, далеко)?</div><div class="og tc"><button class="ob" id="q16b1" style="direction:rtl;font-size:1.2rem">هَذَا قَلَمٌ</button><button class="ob" id="q16b2" style="direction:rtl;font-size:1.2rem">ذَلِكَ الْقَلَمُ</button><button class="ob" id="q16b3" style="direction:rtl;font-size:1.2rem">ذَلِكَ قَلَمٌ</button><button class="ob" id="q16b4" style="direction:rtl;font-size:1.2rem">هَذَا الْقَلَمُ</button></div><div class="fb" id="fb-16"></div></div>
+
+<div class="qb" id="qb-17"><div class="qt">Переведи предложение:</div><div class="qa">الْكِتَابُ جَدِيدٌ وَالْقَلَمُ قَدِيمٌ</div><div class="og tc"><button class="ob" id="q17b1">Книга старая и ручка новая</button><button class="ob" id="q17b2">Книга новая и ручка старая</button><button class="ob" id="q17b3">Книга большая и ручка маленькая</button><button class="ob" id="q17b4">Книга старая и ручка сломана</button></div><div class="fb" id="fb-17"></div></div>
+
+<div class="qb" id="qb-18"><div class="qt">Переведи предложение:</div><div class="qa">الْبَابُ مَفْتُوحٌ</div><div class="og tc"><button class="ob" id="q18b1">Дверь сломана</button><button class="ob" id="q18b2">Дверь закрыта</button><button class="ob" id="q18b3">Дверь открыта</button><button class="ob" id="q18b4">Это дверь</button></div><div class="fb" id="fb-18"></div></div>
+
+<div class="qb" id="qb-19"><div class="qt">Верно или неверно: مَنْ هَذَا؟ используется для вопроса о предмете</div><div class="og tc"><button class="ob" id="q19b1">✓ Верно</button><button class="ob" id="q19b2">✗ Неверно — مَنْ для людей, مَا для предметов</button></div><div class="fb" id="fb-19"></div></div>
+
+<div class="qb" id="qb-20"><div class="qt">Переведи диалог:</div><div class="qa">أَهَذَا وَلَدٌ؟ لَا، هَذَا رَجُلٌ</div><div class="og"><button class="ob" id="q20b1">Это мальчик? Да, это мальчик.</button><button class="ob" id="q20b2">Это мужчина? Нет, это мальчик.</button><button class="ob" id="q20b3">Это мальчик? Нет, это мужчина.</button><button class="ob" id="q20b4">Кто это? Это мальчик.</button></div><div class="fb" id="fb-20"></div></div>
+</div>
+
+<div class="sb">
+<div class="sh"><div class="sn">6</div><div><div class="st">🔊 Прослушай и напиши перевод</div><div class="sd">Нажми кнопку, прослушай и напиши перевод на русском</div></div></div>
+
+<div class="qb" id="qb-21"><div class="qt">Прослушай и напиши перевод:</div>
+<button class="audio-btn" onclick="spk('مَا هَذَا؟ هَذَا قَلَمٌ')"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon><path d="M19.07 4.93a10 10 0 0 1 0 14.14"></path><path d="M15.54 8.46a5 5 0 0 1 0 7.07"></path></svg> 🔊 Прослушать</button>
+<input class="ia" id="i-21" placeholder="Напиши перевод на русском..."><button class="cb" id="cb-21">Проверить</button><div class="fb" id="fb-21"></div><div class="cah" id="h-21"></div></div>
+
+<div class="qb" id="qb-22"><div class="qt">Прослушай и напиши перевод:</div>
+<button class="audio-btn" onclick="spk('مَنْ هَذَا؟ هَذَا طَبِيبٌ')"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon><path d="M19.07 4.93a10 10 0 0 1 0 14.14"></path><path d="M15.54 8.46a5 5 0 0 1 0 7.07"></path></svg> 🔊 Прослушать</button>
+<input class="ia" id="i-22" placeholder="Напиши перевод на русском..."><button class="cb" id="cb-22">Проверить</button><div class="fb" id="fb-22"></div><div class="cah" id="h-22"></div></div>
+
+<div class="qb" id="qb-23"><div class="qt">Прослушай и напиши перевод:</div>
+<button class="audio-btn" onclick="spk('مَا ذَلِكَ؟ ذَلِكَ حَجَرٌ')"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon><path d="M19.07 4.93a10 10 0 0 1 0 14.14"></path><path d="M15.54 8.46a5 5 0 0 1 0 7.07"></path></svg> 🔊 Прослушать</button>
+<input class="ia" id="i-23" placeholder="Напиши перевод на русском..."><button class="cb" id="cb-23">Проверить</button><div class="fb" id="fb-23"></div><div class="cah" id="h-23"></div></div>
+
+<div class="qb" id="qb-24"><div class="qt">Прослушай и напиши перевод:</div>
+<button class="audio-btn" onclick="spk('هَذَا سُكَّرٌ وَذَلِكَ لَبَنٌ')"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon><path d="M19.07 4.93a10 10 0 0 1 0 14.14"></path><path d="M15.54 8.46a5 5 0 0 1 0 7.07"></path></svg> 🔊 Прослушать</button>
+<input class="ia" id="i-24" placeholder="Напиши перевод на русском..."><button class="cb" id="cb-24">Проверить</button><div class="fb" id="fb-24"></div><div class="cah" id="h-24"></div></div>
+
+<div class="qb" id="qb-25"><div class="qt">Прослушай и напиши перевод:</div>
+<button class="audio-btn" onclick="spk('مَنْ هَذَا وَمَنْ ذَلِكَ؟ هَذَا مُدَرِّسٌ وَذَلِكَ إِمَامٌ')"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon><path d="M19.07 4.93a10 10 0 0 1 0 14.14"></path><path d="M15.54 8.46a5 5 0 0 1 0 7.07"></path></svg> 🔊 Прослушать</button>
+<input class="ia" id="i-25" placeholder="Напиши перевод на русском..."><button class="cb" id="cb-25">Проверить</button><div class="fb" id="fb-25"></div><div class="cah" id="h-25"></div></div>
+</div>
+
+<div class="sa"><button class="subb" onclick="showRes()">Завершить тест и узнать оценку</button></div>
+</div>
+
+<div id="rs"><div class="rsc" id="rsc">0%</div><div class="rsg" id="rsg"></div><div class="rsm" id="rsm"></div><p style="color:var(--muted);font-size:.8rem;margin-bottom:30px" id="rsd"></p><div class="errors-block" id="errors-block"></div><br><button class="rb" onclick="retry()">Пройти тест заново</button></div>
+</div>
+
+<script>
+function spk(t){
+  if(!window.speechSynthesis)return;
+  window.speechSynthesis.cancel();
+  setTimeout(function(){
+    var u=new SpeechSynthesisUtterance(t);
+    u.lang='ar-SA';u.rate=0.8;
+    window.speechSynthesis.speak(u);
+  },150);
+}
+
+var TOTAL=25;
+var sc={};var mistakes={};var ms={};var answered=new Set();
+
+var qdata={
+  1:{arabic:'قَلَمٌ',correct:'Ручка / карандаш',explain:'قَلَمٌ — ручка/карандаш. مَا هَذَا؟ هَذَا قَلَمٌ — Что это? Это ручка.'},
+  2:{arabic:'كِتَابٌ',correct:'Книга',explain:'كِتَابٌ — книга. الْكِتَابُ (с артиклем) — та/эта книга.'},
+  3:{arabic:'بَيْتٌ',correct:'Дом',explain:'بَيْتٌ — дом. مَا هَذَا؟ هَذَا بَيْتٌ — Что это? Это дом.'},
+  4:{arabic:'مَسْجِدٌ',correct:'Мечеть',explain:'مَسْجِدٌ — мечеть. هَذَا مَسْجِدٌ وَذَلِكَ بَيْتٌ — Это мечеть и то дом.'},
+  5:{arabic:'سَرِيرٌ',correct:'Кровать',explain:'سَرِيرٌ — кровать. مَا ذَلِكَ؟ ذَلِكَ سَرِيرٌ — Что то? То кровать.'},
+  6:{arabic:'مِفْتَاحٌ',correct:'Ключ',explain:'مِفْتَاحٌ — ключ. مَا هَذَا؟ هَذَا مِفْتَاحٌ — Что это? Это ключ.'},
+  7:{arabic:'طَبِيبٌ',correct:'Врач',explain:'طَبِيبٌ — врач. مَنْ هَذَا؟ هَذَا طَبِيبٌ — Кто это? Это врач.'},
+  8:{arabic:'مُدَرِّسٌ',correct:'Учитель / преподаватель',explain:'مُدَرِّسٌ — учитель/преподаватель. مَنْ هَذَا؟ هَذَا مُدَرِّسٌ — Кто это? Это учитель.'},
+  9:{arabic:'طَالِبٌ',correct:'Студент / учащийся',explain:'طَالِبٌ — студент/учащийся. مَنْ هَذَا؟ هَذَا طَالِبٌ — Кто это? Это студент.'},
+  10:{arabic:'مَنْ هَذَا؟',correct:'مَنْ هَذَا؟',explain:'مَنْ — кто (для людей). مَا — что (для предметов). Важно не перепутать!'},
+  11:{arabic:'مَا هَذَا؟',correct:'مَا هَذَا؟',explain:'مَا هَذَا؟ — Что это? Используется для предметов и животных.'},
+  12:{arabic:'هَذَا قَلَمٌ',correct:'Это ручка',explain:'هَذَا — это (рядом). قَلَمٌ — ручка (без артикля = неопределённое).'},
+  13:{arabic:'ذَلِكَ نَجْمٌ',correct:'То звезда',explain:'ذَلِكَ — то (вдали, далеко). نَجْمٌ — звезда.'},
+  14:{arabic:'أَهَذَا كَلْبٌ؟ لَا، هَذَا قِطٌّ',correct:'Это собака? Нет, это кошка.',explain:'أَهَذَا...؟ — Это...? (вопрос с أ). لَا — нет. كَلْبٌ — собака. قِطٌّ — кошка.'},
+  15:{arabic:'هَذَا حِصَانٌ وَذَلِكَ حِمَارٌ',correct:'Это лошадь и то осёл',explain:'حِصَانٌ — лошадь (рядом → هَذَا). حِمَارٌ — осёл (вдали → ذَلِكَ).'},
+  16:{arabic:'ذَلِكَ الْقَلَمُ',correct:'ذَلِكَ الْقَلَمُ',explain:'«Та ручка» (вдали, с артиклем): ذَلِكَ (то) + الْقَلَمُ (ручка с артиклем الـ).'},
+  17:{arabic:'الْكِتَابُ جَدِيدٌ وَالْقَلَمُ قَدِيمٌ',correct:'Книга новая и ручка старая',explain:'جَدِيدٌ — новый. قَدِيمٌ — старый/древний. Оба предложения номинальные (без глагола).'},
+  18:{arabic:'الْبَابُ مَفْتُوحٌ',correct:'Дверь открыта',explain:'الْبَابُ — дверь (с артиклем). مَفْتُوحٌ — открытый/открыта.'},
+  19:{arabic:'',correct:'✗ Неверно — مَنْ для людей, مَا для предметов',explain:'مَنْ هَذَا؟ — Кто это? (о людях). مَا هَذَا؟ — Что это? (о предметах и животных).'},
+  20:{arabic:'أَهَذَا وَلَدٌ؟ لَا، هَذَا رَجُلٌ',correct:'Это мальчик? Нет, это мужчина.',explain:'وَلَدٌ — мальчик. رَجُلٌ — мужчина. لَا — нет.'}
+};
+
+var answers={1:2,2:3,3:3,4:2,5:3,6:2,7:3,8:2,9:3,10:2,11:2,12:2,13:3,14:3,15:2,16:2,17:2,18:3,19:2,20:3};
+
+var inputs={
+  21:{acc:['что это это ручка','что это ручка','это ручка'],ok:'Что это? Это ручка.'},
+  22:{acc:['кто это это врач','это врач','кто это врач'],ok:'Кто это? Это врач.'},
+  23:{acc:['что то это камень','что то камень','то камень'],ok:'Что то? То камень.'},
+  24:{acc:['это сахар и то молоко','сахар и молоко','это сахар то молоко'],ok:'Это сахар и то молоко.'},
+  25:{acc:['кто это и кто то это учитель и то имам','это учитель то имам','учитель и имам'],ok:'Кто это и кто то? Это учитель и то имам.'}
+};
+
+function upd(){
+  var n=answered.size;
+  document.getElementById('pf').style.width=Math.min(100,Math.round(n/TOTAL*100))+'%';
+  document.getElementById('pl').textContent=n+' / '+TOTAL+' отвечено';
+}
+
+function markQ(id,ok,yours,correct,explain,arabic){
+  if(answered.has(id))return;
+  answered.add(id);
+  sc[id]=ok?1:0;
+  if(!ok)mistakes[id]={yours:yours,correct:correct,explain:explain||'',arabic:arabic||'',q:'Вопрос '+id};
+  upd();
+}
+
+for(var q=1;q<=20;q++){
+  for(var b=1;b<=4;b++){
+    (function(qq,bb){
+      var btn=document.getElementById('q'+qq+'b'+bb);
+      if(!btn)return;
+      btn.addEventListener('click',function(){
+        var block=document.getElementById('qb-'+qq);
+        if(block.classList.contains('correct')||block.classList.contains('wrong'))return;
+        var isOk=(bb===answers[qq]);
+        block.querySelectorAll('.ob').forEach(function(x){x.disabled=true;});
+        var fb=document.getElementById('fb-'+qq);
+        var qd=qdata[qq]||{};
+        if(isOk){
+          this.classList.add('sc');
+          block.classList.add('correct');
+          fb.textContent='✓ Правильно! 💡 '+(qd.explain||'');
+          fb.className='fb show ok';
+          markQ(qq,true,'','','','');
+        }else{
+          this.classList.add('sw');
+          block.classList.add('wrong');
+          var ca=document.getElementById('q'+qq+'b'+answers[qq]);
+          if(ca)ca.classList.add('sk');
+          fb.textContent='✗ Неправильно. 💡 '+(qd.explain||'');
+          fb.className='fb show bad';
+          markQ(qq,false,this.textContent,qd.correct||'',qd.explain||'',qd.arabic||'');
+        }
+      });
+    })(q,b);
+  }
+}
+
+function mc(mid,side,el,lbl){
+  if(!ms[mid])ms[mid]={sel:null,el:null,done:new Set()};
+  var s=ms[mid];
+  if(el.classList.contains('mok'))return;
+  if(s.sel===null){
+    if(side!=='l')return;
+    document.querySelectorAll('#'+mid+'l .ml').forEach(function(x){if(!x.classList.contains('mok'))x.classList.remove('sel');});
+    el.classList.add('sel');s.sel=lbl;s.el=el;
+  }else{
+    if(side==='l'){s.el.classList.remove('sel');el.classList.add('sel');s.sel=lbl;s.el=el;return;}
+    var ll=s.sel,rl=lbl,le=s.el,re=el;
+    s.sel=null;s.el=null;le.classList.remove('sel');
+    if(ll===rl){
+      le.classList.add('mok');re.classList.add('mok');
+      s.done.add(ll);
+      var pid='mp_'+mid+'_'+ll;
+      if(!answered.has(pid)){answered.add(pid);sc[pid]=1;upd();}
+      var ls=document.getElementById(mid+'l');
+      var done=Array.from(ls.querySelectorAll('.ml')).every(function(x){return x.classList.contains('mok');});
+      if(done){var fb=document.getElementById('fb-'+mid);fb.textContent='✓ Все пары верны!';fb.className='fb show ok';}
+    }else{
+      le.classList.add('mbad');re.classList.add('mbad');
+      setTimeout(function(){le.classList.remove('mbad');re.classList.remove('mbad');},700);
+    }
+  }
+}
+
+for(var q2=21;q2<=25;q2++){
+  (function(qq){
+    var cb=document.getElementById('cb-'+qq);
+    if(!cb)return;
+    cb.addEventListener('click',function(){
+      var inp=document.getElementById('i-'+qq);
+      var v=inp.value.trim().toLowerCase();
+      if(!v)return;
+      inp.disabled=true;this.disabled=true;
+      var fb=document.getElementById('fb-'+qq);
+      var h=document.getElementById('h-'+qq);
+      var data=inputs[qq];
+      var ok=data.acc.some(function(a){return v.includes(a.split(' ')[0])&&v.length>2;});
+      if(ok){
+        inp.classList.add('ci');
+        fb.textContent='✓ Правильно!';
+        fb.className='fb show ok';
+        markQ(qq,true,'','','','');
+      }else{
+        inp.classList.add('wi');
+        fb.textContent='✗ Неправильно.';
+        fb.className='fb show bad';
+        h.textContent='Правильный ответ: '+data.ok;
+        markQ(qq,false,inp.value.trim(),data.ok,'','');
+      }
+    });
+  })(q2);
+}
+
+function showRes(){
+  var c=Object.values(sc).filter(function(v){return v===1;}).length;
+  var p=Math.round(c/TOTAL*100);
+  document.getElementById('qc').style.display='none';
+  document.getElementById('rs').style.display='block';
+  document.getElementById('rsc').textContent=p+'%';
+  document.getElementById('rsd').textContent='Правильных: '+c+' из '+TOTAL;
+  var g,m,cl;
+  if(p>=90){g='Оценка: 5 — Отлично!';cl='#27ae60';m='Превосходно! هَذَا и ذَلِكَ усвоены!';}
+  else if(p>=75){g='Оценка: 4 — Хорошо';cl='#2ecc71';m='Хорошая работа!';}
+  else if(p>=60){g='Оценка: 3 — Удовлетворительно';cl='#f39c12';m='Повтори مَا هَذَا؟ и مَنْ هَذَا؟';}
+  else if(p>=40){g='Оценка: 2 — Слабо';cl='#e74c3c';m='Нужно больше практики!';}
+  else{g='Оценка: 1 — Нужно повторить';cl='#c0392b';m='Повтори материал заново.';}
+  var ge=document.getElementById('rsg');ge.textContent=g;ge.style.color=cl;
+  document.getElementById('rsm').textContent=m;
+  document.getElementById('rsc').style.color=cl;
+  var eb=document.getElementById('errors-block');
+  var keys=Object.keys(mistakes);
+  if(keys.length===0){
+    eb.innerHTML='<div style="color:#5ddb8d;text-align:center;padding:20px;background:rgba(39,174,96,0.1);border-radius:12px;border:1px solid #27ae60">🎉 Ошибок нет! Все ответы верные!</div>';
+  }else{
+    var html='<div class="errors-title">❌ Разбор ошибок ('+keys.length+')</div>';
+    keys.forEach(function(k){
+      var m=mistakes[k];
+      html+='<div class="err-item"><div class="err-q">'+m.q+'</div>';
+      if(m.arabic)html+='<div class="err-arabic">'+m.arabic+'</div>';
+      html+='<div class="err-row"><div class="err-yours">✗ '+m.yours+'</div><div class="err-correct">✓ '+m.correct+'</div></div>';
+      if(m.explain)html+='<div class="err-explain">💡 '+m.explain+'</div>';
+      html+='</div>';
+    });
+    eb.innerHTML=html;
+  }
+}
+
+function retry(){
+  sc={};mistakes={};answered=new Set();
+  Object.keys(ms).forEach(function(k){delete ms[k];});
+  document.getElementById('rs').style.display='none';
+  document.getElementById('qc').style.display='block';
+  document.querySelectorAll('.qb').forEach(function(b){b.className='qb';});
+  document.querySelectorAll('.ob').forEach(function(b){b.className='ob';b.disabled=false;});
+  document.querySelectorAll('.fb').forEach(function(f){f.className='fb';f.textContent='';});
+  document.querySelectorAll('.ia').forEach(function(i){i.value='';i.disabled=false;i.className='ia';});
+  document.querySelectorAll('.cb').forEach(function(b){b.disabled=false;});
+  document.querySelectorAll('.cah').forEach(function(h){h.textContent='';});
+  document.querySelectorAll('.ml,.mr').forEach(function(el){el.className=el.classList.contains('mr')?'mi mr':'mi ml';});
+  upd();window.scrollTo({top:0,behavior:'smooth'});
+}
+upd();
+</script>
+</body></html>
